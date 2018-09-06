@@ -1,0 +1,5 @@
+SOURCES += hello.cpp
+SOURCES += main.cpp
+
+HEADERS += hello.h
+
