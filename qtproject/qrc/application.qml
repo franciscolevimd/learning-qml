@@ -1,5 +1,5 @@
 import QtQuick 2.11
-import QtQuick.Controls 2.2
+import QtQuick.Controls 2.4
 
 
 ApplicationWindow
@@ -108,6 +108,24 @@ ApplicationWindow
             text: "3"
             flat: false
             display: AbstractButton.TextOnly
+        }
+    }
+
+    Button
+    {
+        id: nextButton
+        x: 260
+        y: 197
+        width: 131
+        height: 42
+        text: qsTr("Next")
+        visible: true
+        background: Rectangle
+        {
+            radius: 8
+            border.width: 1
+            border.color: "#26282a"
+            color: nextButton.down ? "#d6d6d6" : "#f6f6f6"
         }
     }
 }
